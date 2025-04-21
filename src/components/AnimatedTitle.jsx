@@ -8,24 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AnimatedTitle = ({ title, containerClass }) => {
   const containerRef = useRef(null);
-
-  //   useEffect(() => {
-  //     const ctx = gsap.context(() => {
-  //       const titleAnimation = gsap.timeline({
-  //         scrollTrigger: {
-  //           trigger: containerRef.current,
-  //           start: "100 bottom",
-  //           end: "center bottom",
-  //           toggleActions: "play none none reverse",
-  //         },
-  //       });
-  //       titleAnimation.to(".animation-word", {
-  //         opacity: 1,
-  //         transform: "translate(0,0,0) rotateY(0deg), rotateX(0deg)",
-  //         ease: "power2.inOut",
-  //         stagger: 0.02,
-  //       });
-  //     }, containerRef);
   useEffect(() => {
     const ctx = gsap.context(() => {
       const titleAnimation = gsap.timeline({
@@ -36,7 +18,6 @@ const AnimatedTitle = ({ title, containerClass }) => {
           toggleActions: "play none none reverse",
         },
       });
-
       titleAnimation.to(
         ".animated-word",
         {
@@ -48,7 +29,6 @@ const AnimatedTitle = ({ title, containerClass }) => {
         0
       );
     }, containerRef);
-
     return () => ctx.revert();
   }, []);
   return (

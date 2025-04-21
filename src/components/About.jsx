@@ -39,7 +39,6 @@ const About = () => {
           <p>Zentry unites every player from countless games and platform</p>
         </div>
       </div>
-
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
           <img
