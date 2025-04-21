@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
