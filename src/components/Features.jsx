@@ -45,7 +45,7 @@ const BentoCard = ({ src, title, description }) => {
         src={src}
         loop
         muted
-        // autoPlay
+        autoPlay
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
@@ -62,7 +62,7 @@ const BentoCard = ({ src, title, description }) => {
 
 const Features = () => {
   return (
-    <section className="bg-black pb-52">
+    <section id="features" className="bg-black pb-52">
       <div className="container mx-auto px-4 md:px-10">
         <div className="px-5 py-32">
           <p className="font-circular-web text-lg text-blue-50">
@@ -83,7 +83,6 @@ const Features = () => {
               </>
             }
             description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
-            isComingSoon
           />
         </BentoTilt>
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
@@ -133,7 +132,7 @@ const Features = () => {
               src="videos/feature-5.mp4"
               loop
               muted
-              //   autoPlay
+              autoPlay
               className="size-full object-cover object-center"
             />
           </BentoTilt>
