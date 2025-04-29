@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
+import { FaLocationArrow, FaSackDollar } from "react-icons/fa6";
 
 const ImageClipBox = ({ src, clipClass }) => {
   return (
@@ -46,7 +47,11 @@ const Contact = () => {
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
 
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+          <Button
+            title="contact us"
+            rightIcon={<FaLocationArrow />}
+            containerClass="mt-10 cursor-pointer"
+          />
         </div>
       </div>
     </div>
